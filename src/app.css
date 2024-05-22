@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff6347; /* Tomato color */
+}
+
+header h1 {
+  margin: 10px 0;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #333;
+}
+
+.experience + .experience {
+  margin-top: 20px;
+}
+
+.experience h3 {
+  margin-bottom: 5px;
+}
+
+.experience p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.experience ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.experience ul li {
+  margin-bottom: 5px;
+}
+
+.project + .project {
+  margin-top: 20px;
+}
+
+.project h3 a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project h3 a:hover {
+  color: #ff6347;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 -10px; /* Adjusts for padding */
+}
+
+.skills-list li {
+  background-color: #e7e7e7;
+  margin: 5px 10px; /* Adjusts for padding */
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1 1 calc(33.333% - 20px); /* Flexbox item with a basis of 33.333% */
+  text-align: center; /* Centers text horizontally */
+}
+
+@media (max-width: 768px) {
+  .skills-list li {
+    flex: 1 1 100%; /* Switches to vertical layout on smaller screens */
+  }
+}
+
+.reference + .reference {
+  margin-top: 20px;
+}
+
+.reference h3 {
+  margin-bottom: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  margin-top: auto;
+}
